@@ -29,7 +29,7 @@
 
 准备工作
 
-注册个域名 dash.domain.digitalplat.org 这里免费，这里生产注册信息 www.meiguodizhi.com ，尽量不要用qq和163注册，注册很简单的看不懂的话浏览器插件翻译一下
+注册个域名 dash.domain.digitalplat.org 这里免费，尽量不要用qq和163注册，注册很简单的看不懂的话浏览器插件翻译一下
 
 dash.cloudflare.com 注册一个cf账号解析域名 注册完cf点注册域，填你刚刚注册的域名，![微信截图_20250423040430](https://github.com/user-attachments/assets/67c0da7f-4836-4562-8864-39fc12679646)
 
