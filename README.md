@@ -3,6 +3,7 @@
 实例：   https://live2d.honkai.ct8.pl/  还有一个ai做的小游戏 http://dar.honkai.ct8.pl/ O(∩_∩)O~
 ![微信截图_20250423033407](https://github.com/user-attachments/assets/ff4e2c55-3b62-4ad0-9e96-d7a81c981413)
 为了不那么单调加入了live2d→ https://github.com/imuncle/live2d 这位大大的项目，我仓库里删除了大部分模型只留了几个用作测试，喜欢的可以去他的项目地址下载
+
 进阶→ 能把live2d模型放到任何网站例： https://nz.562427418.xyz/ 
 <img width="1913" height="916" alt="image" src="https://github.com/user-attachments/assets/72860bdd-1b58-49bf-af67-e9d508e1c727" />
 
