@@ -1,3 +1,4 @@
+更新能直接一键部署在vercel
 用ai做一个简单的网页给自己练练手，培养一下兴趣爱好
 
 实例：   https://live2d.honkai.ct8.pl/  还有一个ai做的小游戏 http://dar.honkai.ct8.pl/ O(∩_∩)O~
