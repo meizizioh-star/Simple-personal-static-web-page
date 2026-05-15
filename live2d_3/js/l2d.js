@@ -25,31 +25,31 @@ class L2D {
             let textureCount = 0;
             let motionNames = new Array();
 
-            this.loader.add(name+'_model', modelDir+modelPath, { xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.JSON });
+            this.loader.add(name+'_model', encodeURI(modelDir+modelPath), { xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.JSON });
 
             this.loader.load((loader, resources) => {
                 let model3Obj = resources[name+'_model'].data;
                 
                 if (typeof(model3Obj['FileReferences']['Moc']) !== "undefined") {
-                    loader.add(name+'_moc', modelDir+model3Obj['FileReferences']['Moc'], { xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.BUFFER });
+                    loader.add(name+'_moc', encodeURI(modelDir+model3Obj['FileReferences']['Moc']), { xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.BUFFER });
                 }
 
                 if (typeof(model3Obj['FileReferences']['Textures']) !== "undefined") {
                     model3Obj['FileReferences']['Textures'].forEach((element) => {
-                        loader.add(name+'_texture'+textureCount, modelDir+element);
+                        loader.add(name+'_texture'+textureCount, encodeURI(modelDir+element));
                         textureCount++;
                     });
                 }
 
                 if (typeof(model3Obj['FileReferences']['Physics']) !== "undefined") {
-                    loader.add(name+'_physics', modelDir+model3Obj['FileReferences']['Physics'], { xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.JSON });
+                    loader.add(name+'_physics', encodeURI(modelDir+model3Obj['FileReferences']['Physics']), { xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.JSON });
                 }
 
                 if (typeof(model3Obj['FileReferences']['Motions']) !== "undefined") {
                     for (let group in model3Obj['FileReferences']['Motions']) {
                         model3Obj['FileReferences']['Motions'][group].forEach((element) => {
                             let motionName = element['File'].split('/').pop().split('.').shift();
-                            loader.add(name+'_'+motionName, modelDir+element['File'], { xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.JSON });
+                            loader.add(name+'_'+motionName, encodeURI(modelDir+element['File']), { xhrType: PIXI.loaders.Resource.XHR_RESPONSE_TYPE.JSON });
                             motionNames.push(name+'_'+motionName);
                         });
                     }
