@@ -19,8 +19,8 @@ class L2D {
     load (name, v) {
         if (!this.models[name]) {
             let modelDir = name+'/';
-            name = name.split('/').pop();
-            let modelPath = name+'.model3.json';
+            let modelName = name.split('/').pop();
+            let modelPath = modelName+'.model3.json';
             let textures = new Array();
             let textureCount = 0;
             let motionNames = new Array();
